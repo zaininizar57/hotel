@@ -15,8 +15,7 @@
     </style>
 </head>
 
-<body>
-    <!-- <body onload="print()"> -->
+<body onload="print()">
     <div id="bukti" style="min-height: 100%;">
         <div class="card p-4">
             <div class="card-header text-center">
