@@ -13,9 +13,9 @@
  $insert = "INSERT INTO pemesanan
 VALUES('','$id_kamar','$chekin2','$chekout2','$jmlkamar2','$nama_pemesan','$email','$nomor_hp','
 $nama_tamu','$status','$date')";
-//  $input = mysqli_query($kon,$insert);
+ $input = mysqli_query($kon,$insert);
 
- if (true) {
+ if ($input) {
  echo "<script>
         alert('Sukses Chekin, Silhkan Cetak Bukti Pemesanan ini !');
     </script>";
@@ -28,5 +28,5 @@ $nama_tamu','$status','$date')";
         window.location.href='?menu=beranda';
         </script>";
     }
- }
+}
  ?>

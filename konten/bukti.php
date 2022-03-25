@@ -40,13 +40,13 @@ navigation">
                 <div class="px-5">
                     <ul>
                         <li>Tgl CheckIn : <?= $_GET['chekin'] ?></li>
-                        <li>Tgl CheckIn : <?= $_GET['chekout'] ?></li>
-                        <li>Tgl CheckIn : <?= $_GET['jmlkamar'] ?></li>
+                        <li>Tgl CheckOut : <?= $_GET['chekout'] ?></li>
+                        <li>Jumlah Kamar : <?= $_GET['jmlkamar'] ?></li>
                     </ul>
                     <ul>
-                        <li>Tgl CheckIn : <?= $_GET['nama_pemesan'] ?></li>
-                        <li>Tgl CheckIn : <?= $_GET['nomor_hp'] ?></li>
-                        <li>Tgl CheckIn : <?= $_GET['nama_tamu'] ?></li>
+                        <li>Nama Pemesan : <?= $_GET['nama_pemesan'] ?></li>
+                        <li>No Handphone : <?= $_GET['nomor_hp'] ?></li>
+                        <li>Nama Tamu : <?= $_GET['nama_tamu'] ?></li>
                     </ul>
                     <a href="?menu=print&&chekin=<?= $_GET['chekin'] ?>&&chekout=<?= $_GET['chekout'] ?>&&jmlkamar=<?= $_GET['jmlkamar'] ?>&&nama_pemesan=<?= $_GET['nama_pemesan'] ?>&&nomor_hp=<?= $_GET['nomor_hp'] ?>&&nama_tamu=<?= $_GET['nama_tamu'] ?>&&id_kamar=<?= $_GET['id_kamar'] ?>"
                         class="btn btn-primary">Cetak</a>

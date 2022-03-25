@@ -15,9 +15,10 @@
     </style>
 </head>
 
-<body onload="print()">
+<body>
+    <!-- <body onload="print()"> -->
     <div id="bukti" style="min-height: 100%;">
-        <div class="card">
+        <div class="card p-4">
             <div class="card-header text-center">
                 Bukti Pemesanan
             </div>
@@ -33,16 +34,32 @@
                 </span>
             </div>
             <div class="px-5 d-flex justify-content-between">
-                <ul>
-                    <li>Tgl CheckIn : <?= $_GET['chekin'] ?></li>
-                    <li>Tgl CheckOut : <?= $_GET['chekout'] ?></li>
-                    <li>Jumlah Kamar : <?= $_GET['jmlkamar'] ?></li>
-                </ul>
-                <ul>
-                    <li>Nama Pemesan : <?= $_GET['nama_pemesan'] ?></li>
-                    <li>No Hp : <?= $_GET['nomor_hp'] ?></li>
-                    <li>Nama Tamu : <?= $_GET['nama_tamu'] ?></li>
-                </ul>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>Tgl CheckIn</td>
+                        <td>: <?= $_GET['chekin'] ?></td>
+                        <td>Tgl CheckOut</td>
+                        <td>: <?= $_GET['chekout'] ?></td>
+                    </tr>
+                    <tr>
+                        <td>Jumlah Kamar</td>
+                        <td>: <?= $_GET['jmlkamar'] ?></td>
+                        <td>Nama Pemesan</td>
+                        <td>: <?= $_GET['nama_pemesan'] ?></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Pemesan</td>
+                        <td>: <?= $_GET['nama_pemesan'] ?></td>
+                        <td>No Hp</td>
+                        <td>: <?= $_GET['nomor_hp'] ?></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Pemesan</td>
+                        <td>: <?= $_GET['nama_pemesan'] ?></td>
+                        <td>Nama Tamu/td>
+                        <td>: <?= $_GET['nama_tamu'] ?></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
