@@ -24,7 +24,6 @@ if($_GET['hapus']){
             <div class="card mb-5 ">
                 <div class="card-header">
                     <a href="?menu=tambah_kamar" class="btn btn-primary btn-md">Tambah</a>
-                    <a href="?menu=tambah_fasilitas_umum" class="btn btn-primary btn-md">Tambah Fasilitas Umum</a>
                     <h5 style="float: right;">Data Kamar</h5>
                 </div>
                 <div class="card-body">

@@ -1,5 +1,6 @@
 <div class="container" style="margin-top: 90px;">
     <h1 class="text-center my-4">Fasilitas Umum</h1>
+    <a href="?menu=tambah_fasilitas_umum" class="btn btn-primary btn-md">Tambah Fasilitas Umum</a>
     <?php
  $sql = "SELECT * FROM fasilitas_hotel";
  $query = mysqli_query($kon, $sql);
