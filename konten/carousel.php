@@ -10,33 +10,23 @@
                 arialabel="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div
-                    style="background-image: url('img/1.jpg');  background-size: cover; background-position: center; width: 100vw; height: 80vh;">
-                </div>
+            <?php
+ $aktif="active";
+ $sql = "SELECT * FROM fasilitas_hotel ORDER BY id_fasilitas_hotel DESC LIMIT 3";
+ $hasil = mysqli_query($kon,$sql);
+ while($row = mysqli_fetch_assoc($hasil)) {
+ ?>
+            <div class="carousel-item <?= $aktif ?>">
+                <img src="img/<?= $row['foto_fasilitas_hotel'] ?>" style="width:100%; height: 510px;">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5><?= $row["nama_fasilitas_hotel"] ?></h5>
+                    <p><?= $row["deskripsi_fasilitas_hotel"] ?></p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div
-                    style="background-image: url('img/2.jpg');  background-size: cover; background-position: center; width: 100vw; height: 80vh;">
-                </div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div
-                    style="background-image: url('img/3.jpg');  background-size: cover; background-position: center; width: 100vw; height: 80vh;">
-                </div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
+            <?php
+ $aktif="";
+ }
+ ?>
         </div>
         <button class="carousel-control-prev" type="button" data-bstarget="#carouselExampleCaptions"
             data-bs-slide="prev">
